@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 250px;
+    background-color:black;
+    color: white;
+    margin: 10px 0 ;
+
+    /*making foter box*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child-items {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border: 5px solid rebeccapurple ;
+    color: black;
+  }
