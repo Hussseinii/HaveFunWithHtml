@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body>
+    <style>
+        .content{
+            color: #fff;
+            text-align: center;
+            border: 5px solid black;
+        }
+
+        .content div {
+            height: 100px;
+        }
+        .red {
+            background: orangered;
+        }
+        .green {
+            background: yellowgreen;
+        }
+        .blue {
+            background: steelblue;
+        }
+
+        /* grid */
+        .content {
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+            grid-template-columns: repeat(auto-fit,  minmax(400px, 1fr));
+        }
+    </style>
+
+<h4>grid sample</h4>
+<div class="content">
+  <div class="red">Lorem, ipsum dolor sit Lorem ipsum dolor sit.</div>
+  <div class="green">2</div>
+  <div class="blue">3</div>
+  <div class="red">4</div>
+  <div class="green">5</div>
+  <div class="blue">6</div>
+</div>
+  </body>
+</html>
